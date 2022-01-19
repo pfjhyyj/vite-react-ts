@@ -4,22 +4,44 @@
         "es2021": true
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
-        "standard"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": "latest",
+        "ecmaVersion": 13,
         "sourceType": "module"
     },
     "plugins": [
         "react",
-        "@typescript-eslint",
-        "plugin:react/jsx-runtime"
+        "@typescript-eslint"
     ],
     "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
